@@ -10,7 +10,7 @@ class Dux < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_darwin_amd64.tar.gz"
-      sha256 "2d94331d3d6c27e3ee05a865333bdad113d70184d015a3de383b58e4cbe4223a"
+      sha256 "ee3a1c543b492da913fb95dc0bdf4cd5ff100722b3b64f1151b4174f9feaece0"
 
       def install
         bin.install "dux"
@@ -18,7 +18,7 @@ class Dux < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_darwin_arm64.tar.gz"
-      sha256 "3408b7f3776d68f9876f889a903308fcfbbb601e28bce3324dd9a77108d18c1f"
+      sha256 "9cf1a4c7fe9a35a92df6952914036bf9acba923e11fb941035ef1a91dc034455"
 
       def install
         bin.install "dux"
@@ -29,14 +29,14 @@ class Dux < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_linux_amd64.tar.gz"
-      sha256 "e85ba02932057f23975b73e3432a69b6dff3455cb8de6605b8e4de0363365b15"
+      sha256 "6c2195caeb9d79381a677277824036a74e7956050c63a1f7876964fd4e0ca540"
       def install
         bin.install "dux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_linux_arm64.tar.gz"
-      sha256 "fefedf23e841cdd7da55a92fb623e855dbb6cadd217b4e6aaf6b476fa3e4487b"
+      sha256 "ff70114a71883e697b5aed6355a7180880fca970edc352711f1d19fbb9e67b12"
       def install
         bin.install "dux"
       end
