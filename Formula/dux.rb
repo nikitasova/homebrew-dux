@@ -5,20 +5,20 @@
 class Dux < Formula
   desc "Docker Use Context - Fast Docker context switching"
   homepage "https://github.com/nikitasova/dux"
-  version "1.0"
+  version "1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikitasova/dux/releases/download/v1.0/dux_1.0_darwin_amd64.tar.gz"
-      sha256 "99a8ef77a98228fe0684d125ba344d97870dd701a07083687ca62bdb8a050273"
+      url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_darwin_amd64.tar.gz"
+      sha256 "2d94331d3d6c27e3ee05a865333bdad113d70184d015a3de383b58e4cbe4223a"
 
       def install
         bin.install "dux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikitasova/dux/releases/download/v1.0/dux_1.0_darwin_arm64.tar.gz"
-      sha256 "b40fa90719bc2714a825070a79d4857d2991bf466047c9a8bb5c4d6db78cb00b"
+      url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_darwin_arm64.tar.gz"
+      sha256 "3408b7f3776d68f9876f889a903308fcfbbb601e28bce3324dd9a77108d18c1f"
 
       def install
         bin.install "dux"
@@ -28,15 +28,15 @@ class Dux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/dux/releases/download/v1.0/dux_1.0_linux_amd64.tar.gz"
-      sha256 "77807b5b2684ad702e64b289ec5d0ac4be3ff8571c883f1821337096fe51cbb2"
+      url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_linux_amd64.tar.gz"
+      sha256 "e85ba02932057f23975b73e3432a69b6dff3455cb8de6605b8e4de0363365b15"
       def install
         bin.install "dux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nikitasova/dux/releases/download/v1.0/dux_1.0_linux_arm64.tar.gz"
-      sha256 "8a1ea9302a112c01c226820cbdcc72bf2ee142c884a2029f58a1f0e079bd7626"
+      url "https://github.com/nikitasova/dux/releases/download/v1.1/dux_1.1_linux_arm64.tar.gz"
+      sha256 "fefedf23e841cdd7da55a92fb623e855dbb6cadd217b4e6aaf6b476fa3e4487b"
       def install
         bin.install "dux"
       end
